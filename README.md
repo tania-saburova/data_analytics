@@ -18,7 +18,7 @@ CASE
     WHEN [Lifespan] >= 90 AND [Lifespan] <= 99 THEN '90-99'
     ELSE '100+'
 END
-'''
+```
 
 
 2. Did the same report for Tableau (with Google Cloud Big Query source).
@@ -28,7 +28,7 @@ The interactive dashboard can be viewed [here](https://public.tableau.com/app/pr
 [![Tableau Dashboard Example (IMDb)](Visualisation/Tableau_imbd_example.png)](https://public.tableau.com/app/profile/tanya.saburova/viz/BigQuery_IMBD/Dashboard1?publish=yes)
 
 Note: calculated field for Tableau, d_age_range:
-'''
+```
 IF [Lifespan] < 12 THEN '<12'
   ELSEIF [Lifespan] >= 12 AND [Lifespan] <= 18 THEN '12-18'
   ELSEIF [Lifespan] >= 19 AND [Lifespan] <= 25 THEN '19-25'
@@ -38,5 +38,5 @@ IF [Lifespan] < 12 THEN '<12'
   ELSEIF [Lifespan] >= 90 AND [Lifespan] <= 99 THEN '90-99'
   ELSE '100+'
 END
-'''
+```
 
