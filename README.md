@@ -7,7 +7,8 @@ Here’s an example of a Looker dashboard visualization that analyzes the lifesp
 [![Looker Dashboard Example (IMDb)](Visualisation/Looker_imbd_example.png)](https://lookerstudio.google.com/embed/reporting/15deb2b7-387a-4cfd-9e1e-d1747ec0bafc/page/NFd8D)
 
 Note: calculated field for Looker, D_age range:
-CASE
+```sql
+CASE 
     WHEN [Lifespan] < 12 THEN '<12'
     WHEN [Lifespan] >= 12 AND [Lifespan] <= 18 THEN '12-18'
     WHEN [Lifespan] >= 19 AND [Lifespan] <= 25 THEN '19-25'
@@ -17,6 +18,7 @@ CASE
     WHEN [Lifespan] >= 90 AND [Lifespan] <= 99 THEN '90-99'
     ELSE '100+'
 END
+
 
 2. Did the same report for Tableau (with Google Cloud Big Query source).
 
