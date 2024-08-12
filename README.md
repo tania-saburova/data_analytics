@@ -4,4 +4,4 @@ Here’s an example of a Looker dashboard visualization that analyzes the lifesp
 
 <img src="Visualisation/Looker_imbd_example.png" alt="Looker Dashboard Example (imbd)">
 
-The interactive dashboard can be found here: <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/15deb2b7-387a-4cfd-9e1e-d1747ec0bafc/page/NFd8D" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+The interactive dashboard can be viewed [here](https://lookerstudio.google.com/embed/reporting/15deb2b7-387a-4cfd-9e1e-d1747ec0bafc/page/NFd8D).
