@@ -40,6 +40,10 @@ IF [Lifespan] < 12 THEN '<12'
 END
 ```
 ___________________________________________________________
+It has an icon different from a regular table, and once it's opened, it's needed to run an SQL query first before being able to see any data.
+
+![BigQuery SQL View Example 1](BigQuery/SQL View Example 1.png)
+![BigQuery SQL View Example 2](BigQuery/SQL View Example 2.png)
 
 I've created a Test SQL View in BigQuery.  : 
 ```
@@ -67,5 +71,5 @@ GROUP BY
 
 It has an icon different from a regular table, and once it's opened, it's needed to run an SQL query first before being able to see any data.
 
-[![BigQuery SQL View Example 1](BigQuery/SQL View Example 1.png)]
-[![BigQuery SQL View Example 2](BigQuery/SQL View Example 2.png)]
+![BigQuery SQL View Example 1](BigQuery/SQL View Example 1.png)
+![BigQuery SQL View Example 2](BigQuery/SQL View Example 2.png)
