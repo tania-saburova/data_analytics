@@ -39,4 +39,30 @@ IF [Lifespan] < 12 THEN '<12'
   ELSE '100+'
 END
 ```
+___________________________________________________________
 
+I've created a Test SQL View in BigQuery.  : 
+```
+CREATE VIEW actors_with_moovie_names_for_da.Test_view3 AS
+SELECT
+    name_basics.primary_name,
+    title_basics.original_title,
+    ( name_basics.death_year - name_basics.birth_year) AS Lifespan,
+    title_ratings.average_rating
+FROM
+    imdb.name_basics
+JOIN imdb.title_basics ON title_basics.tconst = name_basics.known_for_titles
+JOIN imdb.title_ratings ON title_ratings.tconst = name_basics.known_for_titles
+
+WHERE 
+name_basics.death_year > 1000
+AND 
+name_basics.birth_year > 1000
+GROUP BY
+    Lifespan,
+    name_basics.primary_name,
+    title_basics.original_title,
+    title_ratings.average_rating;
+```
+
+It has an icon different from a regular table, and when you open it, you need to run an SQL query first before being able to see any data.
