@@ -65,4 +65,6 @@ GROUP BY
     title_ratings.average_rating;
 ```
 
-It has an icon different from a regular table, and when you open it, you need to run an SQL query first before being able to see any data.
+It has an icon different from a regular table, and once it's opened, it's needed to run an SQL query first before being able to see any data.
+![BigQuery_SQL View Example](BigQuery/SQL View Example 1.png)
+![BigQuery_SQL View Example](BigQuery/SQL View Example 2.png)
